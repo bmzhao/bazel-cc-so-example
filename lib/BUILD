@@ -41,14 +41,6 @@ cc_binary(
     ],
 )
 
-cc_binary(
-    name = "main_with_dynamic_deps",
-    srcs = ["main.cc"],
-    dynamic_deps = [
-        ":name_utils_dynamic_lib",
-    ],
-)
-
 proto_library(
     name = "name_proto",
     srcs = ["name.proto"],
